@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5ef901d3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+
+    background-image: url("./images/bg4.png");
+}
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="wrapper">
+        <section class="game-section">
+            <div class="game navbox">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="logo" style="  height: 2rem; width: fit-content; margin: auto;">
+                </div>
+                <hr>
+                <div class="controls">
+                    <a href="index.html"><i class="fa-solid fa-house fa-xl" id="home"></i></a>
+                    <i class="fa-solid fa-volume-high fa-xl" id="play_button"></i>
+                    <audio src="images/audio.mp3" id="audio"></audio>
+                </div>
+            </div>
+            <a class="game game1" id="RPS " href="./rps.html">
+            </a>
+            <a class="game game2" id="TTT" href="./ttt.html"></a>
+        </section>
+        <section class="game-board">
+            <div class="board">
+                <div class="g1_container">
+                        <div class="g1_result_field">
+                            <div class="g1_result_images">
+                                <span class="g1_user_result">
+                                    <img class="" src="./images/games/RPS/raise-hand.png" alt="img">
+                                </span>
+                                <span class="g1_cpu_result">
+                                    <img class="" src="./images/games/RPS/raise-hand.png" alt="img">
+                                </span>
+                            </div>
+                            <div class="g1_result">Let's Play!</div>
+                        </div>
+                        <div class="g1_option_images">
+                            <span class="g1_option_img">
+                                <img class="paper_img" src="./images/games/RPS/hand-paper.png" alt="img">
+                                <p>Paper</p>
+                            </span>
+                            <span class="g1_option_img">
+                                <img class="rock_img" src="./images/games/RPS/raise-hand.png" alt="img">
+                                <p>Rock</p>
+                            </span>
+                            <span class="g1_option_img">        
+                                <img class="scissors_img" src="./images/games/RPS/scissors.png" alt="img">
+                                <p>Scissors</p>
+                            </span>
+                        </div>
+                    </div>
+            </div>
+            <div class="score">
+                <div class="score-title">
+                    <img id="gameImage" src="./images/games/rock2 (1).jpg" alt="#">
+                    <h3 id="gameName">Rock Paper Scissors</h3>
+                </div>
+                <div id="g4_gameStatus">
+                    <i id="p1" class="fa-solid fa-user" style="color: #f40b0b;">Player</i>
+                    <i id="p2" class="fa-solid fa-user" style="color: #130bf4;">Cpu</i>
+                    <!-- <i id="points" class="fa-solid fa-trophy">45</i> -->
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="game game7" id="MTH">Comming Soon!</div>
+            <a class="game game3" id="MCG" href="./mcg.html"></a>
+            <a class="game game4" id="SDK" href="./sdk.html"></a>
+        </section>
+    </header>
+
+    <section class="instructions">
+        <aside class="instruction2">
+            <div class="about" id="Rock-Paper-sissors-info">
+                <img style="height: 8rem; width: 8rem;" src="./images/games/rock-1 (1).png" alt="logo">
+                <div class="reviews" id="rating">
+                    ⭐⭐⭐⭐
+                </div>
+                <p id="about">Rock, Paper, Scissors, commonly known as RPS, is a simple hand game enjoyed by people of
+                    all ages worldwide. This game is easy to learn, but it can be surprisingly strategic. In this guide,
+                    we'll explore the basics of the game and provide you with tips and strategies to help you become a
+                    Rock, Paper, Scissors champion.
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2 id="how-to-play">How To Play?</h2>
+                <br>
+                <section>
+                    <h3>Gameplay</h3>
+                    <ul>
+                        <li>Both players count to three aloud ("Rock, Paper, Scissors, shoot!").</li>
+                        <li>On "shoot," each player forms one of the three shapes: Rock, Paper, or Scissors.</li>
+                        <li>Determine the winner based on the rules mentioned above.</li>
+                    </ul>
+                </section>
+                <br>
+                <section>
+                    <h3>Winning and Scoring</h3>
+                    <ul>
+                        <li>Rock beats Scissors.</li>
+                        <li>Scissors beat Paper.</li>
+                        <li>Paper beats Rock.</li>
+                    </ul>
+                    <p>
+                        The player whose chosen shape beats their opponent's shape wins the round. You can play a set
+                        number of rounds or until one player reaches a predetermined score.
+                    </p>
+                </section>
+                <br>
+                <section>
+                    <h3>Tips for Success</h3>
+                    <ol>
+                        <li>Start with a Random Choice: To keep your opponent guessing, start with a random choice. This
+                            can help you avoid predictability.</li>
+                        <li>Observe Patterns: Pay attention to any patterns or tendencies your opponent might have. Some
+                            people subconsciously repeat their choices.</li>
+                        <li>Use Psychological Tactics: Try to psych out your opponent. If they've been choosing Rock
+                            consistently, for example, you might want to go with Paper to counter their likely choice of
+                            Scissors.</li>
+                    </ol>
+                </section>
+                <br>
+                <section>
+                    <h2>Advanced Strategies</h2>
+                    <ol>
+                        <li>Mind Games: Sometimes, your opponent might try to predict your strategy. In such cases, make
+                            unexpected choices to throw them off balance.</li>
+                        <li>Pattern Recognition: If you're playing multiple rounds, look for patterns in your opponent's
+                            choices. If they tend to switch between Rock and Paper, for instance, you can anticipate
+                            their next move.</li>
+                        <li>Bluffing: Act as though you're about to make a particular choice but switch at the last
+                            moment. This can confuse your opponent and give you the upper hand.</li>
+                    </ol>
+                </section>
+                <br>
+                <section>
+                    <h2>Ending the Game</h2>
+                    <p>
+                        Rock, Paper, Scissors can be played for fun or as a quick decision-making tool. There's no fixed
+                        end point unless you decide on a predetermined number of rounds or a target score. The player
+                        who reaches that goal first is declared the winner.
+                    </p>
+                </section>
+            </div>
+            </aside>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="content">
+            <img src="images/logo.png" alt="">
+            <h5>Let the world play</h5>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Devlopers</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Privacy Statement</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div>
+                <img src="images/lang.png" alt="#" style="height: 2rem; width:2rem">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const gameContainer = document.querySelector(".g1_container"),
+    userResult = document.querySelector(".g1_user_result img"),
+    cpuResult = document.querySelector(".g1_cpu_result img"),
+    result = document.querySelector(".g1_result"),
+    optionImages = document.querySelectorAll(".g1_option_img");
+
+optionImages.forEach((image, index) => {
+    image.addEventListener("click", (e) => {
+        image.classList.add("active");
+        // userResult.classList.add(`ac${index}`);
+        // userResult.src=cpuResult.src="./images/games/RPS/raise-hand.png";
+        // result.textContent = "Wait...";
+        // loop through each option image again
+        optionImages.forEach((image2, index2) => {
+            // if the current index does'nt match the clicked index
+            // Remove the "active" class from the other option images
+            index !== index2 && image2.classList.remove("active");
+            // index !== index2 && userResult.classList.remove(`ac${index}`);
+        });
+        // Get the source of the clicked option image
+        gameContainer.classList.add("start");
+        gameContainer.classList.remove("start");
+        let imageSrc = e.target.src;
+        userResult.src = imageSrc;
+
+        let randomNum = Math.floor(Math.random() * 3);
+        let cpuImages = ["./images/games/RPS/hand-paper.png", "./images/games/RPS/raise-hand.png", "./images/games/RPS/scissors.png"];
+        cpuResult.src = cpuImages[randomNum];
+        let cpuValue = ["R", "P", "S"][randomNum];
+        let userValue = ['R', 'P', 'S'][index];
+        let outcome = {
+            RR: "Draw",
+            RP: "Cpu",
+            RS: "User",
+            PP: "Draw",
+            PR: "User",
+            PS: "Cpu",
+            SS: "Draw",
+            SR: "Cpu",
+            SP: "User",
+        };
+        const pnts = document.getElementById('points');
+        let outcomeValue = outcome[cpuValue + userValue];
+        let newpoint = 0;
+        result.textContent = userValue === cpuValue ? "Match Draw" : `${outcomeValue} Won!`, newpoint++;
+        pnts.innerText = newpoint;
+    })
+})
+
+    </script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

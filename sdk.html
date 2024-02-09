@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5ef901d3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./images/bg7.jpg");
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="wrapper">
+        <section class="game-section">
+            <div class="game navbox">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="logo" style="  height: 2rem; width: fit-content; margin: auto;">
+                </div>
+                <hr>
+                <div class="controls">
+                    <a href="index.html"><i class="fa-solid fa-house fa-xl" id="home"></i></a>
+                    <i class="fa-solid fa-volume-high fa-xl" id="play_button"></i>
+                    <audio src="images/audio.mp3" id="audio"></audio>
+                </div>
+            </div>
+            <a class="game game1" id="RPS " href="./rps.html">
+            </a>
+            <a class="game game2" id="TTT" href="./ttt.html"></a>
+        </section>
+        <section class="game-board">
+            <div class="board">
+                <div id="g4_container">
+                </div>
+            </div>
+            <div class="score">
+                <div class="score-title">
+                    <img id="gameImage" src="./images/games/suduko.png" alt="#">
+                    <h3 id="gameName">Suduko</h3>
+                </div>
+                <div id="g4_digits">
+                </div>
+                <div id="g4_gameStatus">
+                    <i id="p1" class="fa-solid fa-user" style="color: #f40b0b;"></i>
+                    <!-- <i id="p2" class="fa-solid fa-user" style="color: #130bf4;">Player2</i> -->
+                    <!-- <i id="points" class="fa-solid fa-trophy">45</i> -->
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="game game7" id="MTH">Comming Soon!</div>
+            <a class="game game3" id="MCG" href="./mcg.html"></a>
+            <a class="game game4" id="SDK" href="./sdk.html"></a>
+        </section>
+    </header>
+
+    <section class="instructions">
+        <aside class="instruction3">
+            <div class="about" id="sdk-info">
+                <img style="height: 8rem; width: 8rem;" src="./images/games/suduko.png" alt="logo">
+                <div class="reviews" id="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <p id="about">Sudoku is a highly popular and addictive logic-based puzzle game that has captured the
+                    hearts and minds of millions of people around the world. Its origins can be traced back to
+                    Switzerland and other European countries in the late 18th century, but it gained international
+                    popularity in the early 21st century, becoming a staple in newspapers, puzzle books, and mobile
+                    apps. The game's appeal lies in its simplicity and the intellectual challenge it offers.
+                </p>
+                <br>
+                <p>Sudoku is played on a 9x9 grid, which is divided into nine 3x3 subgrids called "regions" or "boxes."
+                    The puzzle begins with some of the cells in the grid filled with numbers. The goal is to fill in the
+                    remaining cells so that each row, column, and region contains every number from 1 to 9, with no
+                    repetition.</p>
+            </div>
+            <br>
+            <div>
+                <h2 id="how-to-play">How To Play?</h2>
+                <p>Playing Sudoku requires both logical deduction and a good memory. Here are the fundamental rules and
+                    strategies:
+                    <br>
+                <h3>Setup:</h3>
+                Start with a blank Sudoku grid or a partially filled grid with some numbers already provided as clues.
+                <br>
+                <h3> Gameplay:</h3>
+                <p>Each row must contain all the numbers from 1 to 9 without repetition.
+                    <br>
+                    Each column must also contain all the numbers from 1 to 9 without repetition.
+                    <br>
+                    Each of the nine 3x3 regions must contain all the numbers from 1 to 9 without repetition.
+                </p>
+                <br>
+                <h3>Winning Conditions:
+                </h3>
+                <p>You win the Sudoku puzzle when you successfully fill in all 81 cells of the grid following the rules
+                    of Sudoku, creating a complete grid with no violations.
+                </p>
+                <br>
+                <h3>Tips for Success:</h3>
+                <p>Start with easier puzzles to get the hang of the game before tackling harder ones.
+                    Look for rows, columns, or regions with the fewest remaining empty cells to find easier deductions.
+                    Scan the grid systematically, checking each number from 1 to 9 to see if it fits in a specific cell
+                    based on existing clues.
+                    Use candidates (temporary notations) to keep track of possible numbers for each cell.
+                    Practice and persistence are key to improving your Sudoku-solving skills.
+
+                </p>
+                </p>
+            </div>
+        </aside>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="content">
+            <img src="images/logo.png" alt="">
+            <h5>Let the world play</h5>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Devlopers</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Privacy Statement</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div>
+                <img src="images/lang.png" alt="#" style="height: 2rem; width:2rem">
+            </div>
+        </div>
+    </footer>
+    <script>
+        let numSelected = null;
+        let tileSelected = null;
+
+        let errors = 0;
+        let g4Board = [
+            "--74916-5",
+            "2---6-3-9",
+            "-----7-1-",
+            "-586----4",
+            "--3----9-",
+            "--62--187",
+            "9-4-7---2",
+            "67-83----",
+            "81--45---"
+        ]
+
+        let solution = [
+            "387491625",
+            "241568379",
+            "569327418",
+            "758619234",
+            "123784596",
+            "496253187",
+            "934176852",
+            "675832941",
+            "812945763"
+        ]
+
+
+
+        function setGame() {
+            for (let i = 1; i <= 9; i++) {
+                let number = document.createElement("div");
+                number.id = i;
+                number.innerText = i;
+                number.addEventListener("click", selectedNumber);
+                number.classList.add("g4_number");
+                document.getElementById("g4_digits").appendChild(number);
+            }
+
+            for (let r = 0; r < 9; r++) {
+                for (let c = 0; c < 9; c++) {
+                    let tile = document.createElement("div");
+                    tile.id = r.toString() + "-" + c.toString();
+                    if (g4Board[r][c] != "-") {
+                        tile.innerText = g4Board[r][c];
+                        tile.classList.add("tile-start");
+                    }
+                    if (r == 2 || r == 5) {
+                        tile.classList.add("horizontal-line");
+                    }
+                    if (c == 2 || c == 5) {
+                        tile.classList.add("vertical-line");
+                    }
+                    tile.addEventListener("click", selectTile);
+                    tile.classList.add("g4_tile");
+                    document.getElementById("g4_container").appendChild(tile);
+                }
+            }
+        }
+
+        function selectedNumber() {
+            if (numSelected != null) {
+                numSelected.classList.remove("number-selected");
+            }
+            numSelected = this;
+            numSelected.classList.add("number-selected");
+        }
+
+        function selectTile() {
+            if (numSelected) {
+                if (this.innerText != "") {
+                    return;
+                }
+                // this.innerText = numSelected.id;
+
+                let coords = this.id.split("-");
+                let r = parseInt(coords[0]);
+                let c = parseInt(coords[1]);
+                if (solution[r][c] == numSelected.id) {
+                    this.innerText = numSelected.id;
+                }
+                else {
+                    errors += 1;
+                    document.getElementById("p1").innerText = errors;
+                }
+            }
+        }
+        setGame();
+    </script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5ef901d3.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="wrapper">
+        <section class="game-section">
+            <div class="game navbox">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="logo" style="  height: 2rem; width: fit-content; margin: auto;">
+                </div>
+                <hr>
+                <div class="controls">
+                    <a href="index.html"><i class="fa-solid fa-house fa-xl" id="home"></i></a>
+                    <i class="fa-solid fa-volume-high fa-xl" id="play_button"></i>
+                    <audio src="images/audio.mp3" id="audio" autoplay></audio>
+                </div>
+            </div>
+            <a class="game game1" id="RPS " href="./rps.html">
+            </a>
+            <a class="game game2" id="TTT" href="./ttt.html"></a>
+        </section>
+        <section class="game-board">
+            <div class="board">
+                <img id="boardGif" src="./images/xw.gif" autoplay></img>  
+            </div>
+            <div class="score">
+                <div class="score-title">
+                    <img id="gameImage" src="./images/logo.png" alt="#" style="  height: 2rem; width: fit-content; margin: auto;">
+                    <h3 id="gameName"></h3>
+                </div>
+                <div id="g4_gameStatus">
+                    <i id="p1" class="fa-solid fa-user" style="color: #f40b0b;"></i>
+                    <i id="p2" class="fa-solid fa-user" style="color: #130bf4;"></i>
+                    <!-- <i id="points" class="fa-solid fa-trophy">45</i> -->
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="game game7" id="MTH">Comming Soon!</div>
+            <a class="game game3" id="MCG" href="./mcg.html"></a>
+            <a class="game game4" id="SDK" href="./sdk.html"></a>
+        </section>
+    </header>
+
+    <section class="instructions">
+        <section>
+            <h1>Welcome to GameStack!</h1>
+            <p>Your Gateway to Endless Gaming Fun</p>
+        </section>
+        <section>
+            <h2>Introduction</h2>
+            <p>Immerse yourself in a world of gaming excitement with GameStack. Whether you're a seasoned gamer or just
+                looking for some casual fun, GameStack has something for everyone. Explore our collection of classic
+                and engaging games that are sure to challenge your skills and provide hours of entertainment.</p>
+        </section>
+    
+        <section>
+            <h2>Featured Games</h2>
+            <p>Challenge yourself with the timeless puzzle game of Sudoku. Sharpen your logical skills as you fill in the
+                grid, strategically placing numbers from 1 to 9. With varying difficulty levels, Sudoku at GameStack offers
+                a brain-teasing experience that keeps you coming back for more.</p>
+        </section>
+    
+        <section>
+            <h2>Join the Fun!</h2>
+            <p>Ready to embark on a gaming adventure? Join us at GameStack, where every click brings you closer to a world
+                of entertainment. Play, challenge, and most importantly, have fun! The adventure awaits – let the games
+                begin!</p>
+        </section>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="content">
+            <img src="images/logo.png" alt="">
+            <h5>Let the world play</h5>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Devlopers</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Privacy Statement</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div>
+                <img src="images/lang.png" alt="#" style="height: 2rem; width:2rem">
+            </div>
+        </div>
+    </footer>
+    <script src="script.js" defer type="text/javascript"></script>
+</body>
+
+</html>

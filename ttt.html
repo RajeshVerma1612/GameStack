@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5ef901d3.js" crossorigin="anonymous"></script>
+    <style>
+        body{
+            background-image: url("./images/bg5.jpg");
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="wrapper">
+        <section class="game-section">
+            <div class="game navbox">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="logo" style="  height: 2rem; width: fit-content; margin: auto;">
+                </div>
+                <hr>
+                <div class="controls">
+                    <a href="index.html"><i class="fa-solid fa-house fa-xl" id="home"></i></a>
+                    <i class="fa-solid fa-volume-high fa-xl" id="play_button"></i>
+                    <audio src="images/audio.mp3" id="audio"></audio>
+                </div>
+            </div>
+            <a class="game game1" id="RPS " href="./rps.html">
+            </a>
+            <a class="game game2" id="TTT" href="./ttt.html"></a>
+        </section>
+        <section class="game-board">
+            <div class="board">
+                <div class="g2_container">
+                    <div id="g2_gameboard">
+
+                    </div>
+                    <div id="g2_info">
+                    </div>
+                </div>
+            </div>
+            <div class="score">
+                <div class="score-title">
+                    <img id="gameImage" src="./images/games/tic1 (1).png" alt="#">
+                    <h3 id="gameName">Tic Tac Toe</h3>
+                </div>
+                <div id="g4_gameStatus">
+                    <i id="p1" class="fa-solid fa-user" style="color: #f40b0b;">Player 1</i>
+                    <i id="p2" class="fa-solid fa-user" style="color: #130bf4;">Player2</i>
+                    <!-- <i id="points" class="fa-solid fa-trophy">45</i> -->
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="game game7" id="MTH">Comming Soon!</div>
+            <a class="game game3" id="MCG" href="./mcg.html"></a>
+            <a class="game game4" id="SDK" href="./sdk.html"></a>
+        </section>
+    </header>
+
+    <section class="instructions">
+        <aside class="instruction1">
+            <div class="about" id="tic-tac-toe-info">
+                <img style="height: 4rem; width: 8rem;" src="./images/pngkey.com-tic-tac-toe-png-2056775.png"
+                    alt="logo">
+                <div class="reviews" id="rating">
+                    ⭐⭐⭐⭐
+                </div>
+                <p id="about">Tic-Tac-Toe, also known as Noughts and Crosses, is a classic and timeless game enjoyed by
+                    people of all ages around the world. Despite its simplicity, Tic-Tac-Toe offers a surprising depth
+                    of strategy and tactics. In this guide, we'll explore the fundamentals of the game and provide you
+                    with some tips and strategies to help you become a Tic-Tac-Toe master.</p>
+            </div>
+            <br>
+            <div>
+                <h2 id="how-to-play">How To Play?</h2>
+                <p>Tic-Tac-Toe, also known as Noughts and Crosses, is a straightforward game played on a 3x3 grid. The
+                    objective is to be the first player to form a line of three of your symbols (either X or O)
+                    horizontally, vertically, or diagonally. Here are the basic rules and steps to play Tic-Tac-Toe:
+
+                    Setup:
+
+                    Draw a grid with three horizontal rows and three vertical columns. This grid creates nine cells or
+                    squares.
+
+                    Decide which player will be "X" and which will be "O." You can also use other symbols like "✕" and
+                    "O."
+                    <br>
+                    <br>
+                <h3> Gameplay:</h3>
+                <p> The game typically starts with an empty grid.
+
+                    Players take turns, starting with the "X" player.
+
+                    On your turn, place your symbol (X or O) in an empty cell on the grid. You can do this by drawing an
+                    "X" or an "O" inside the chosen cell.
+
+                    Players continue to take turns, one move at a time, until one of the following happens:
+
+                    One player gets three of their symbols in a row, either horizontally, vertically, or diagonally, and
+                    wins the game.
+                    All nine cells are filled, resulting in a draw or a tie game. In this case, no one wins.</p>
+                <br>
+                <br>
+                <h3>Winning Conditions:
+                </h3>
+                <p>To win, you need to create a line of three of your symbols (X or O) in any of the following ways:
+                </p>
+                <p><strong>Horizontal Line: </strong>Have three of your symbols in a row on the same horizontal line
+                    (e.g., X X X or O O O).
+                </p>
+                <p><strong> Vertical Line:</strong> Have three of your symbols in a row on the same vertical line.
+                </p>
+                <p><strong>Diagonal Line:</strong> Have three of your symbols in a row on a diagonal line.
+                </p>
+                <br>
+                <br>
+                <h3>Ending the Game:</h3>
+                <p>The game ends as soon as one player wins by forming a line of three of their symbols or when all nine
+                    cells are filled, resulting in a draw. If a player wins, they are declared the winner, and if the
+                    game ends in a draw, it's considered a tie.
+                </p>
+                <p>Tic-Tac-Toe is a game that often ends quickly due to its simple nature, but it can also be a fun and
+                    strategic pastime. It's suitable for players of all ages and skill levels, making it a popular
+                    choice for a quick game of strategy and competition.
+                </p>
+                </p>
+            </div>
+        </aside>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="content">
+            <img src="images/logo.png" alt="">
+            <h5>Let the world play</h5>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Devlopers</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Privacy Statement</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div>
+                <img src="images/lang.png" alt="#" style="height: 2rem; width:2rem">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const gameboard = document.querySelector("#g2_gameboard");
+        const infoDisplay = document.querySelector("#g2_info");
+
+        const starCells = ["", "", "", "", "", "", "", "", ""];
+
+        let go = "circle";
+        infoDisplay.textContent = "Circle goes First";
+        let restart = 0; // Added a restart variable to control game restart
+
+        function createBoard() {
+            starCells.forEach((cell, index) => {
+                const cellElement = document.createElement('div');
+                cellElement.classList.add('g2_square');
+                cellElement.id = index;
+                cellElement.addEventListener('click', markit);
+                gameboard.append(cellElement);
+            });
+        }
+        createBoard();
+
+        function markit(e) {
+            const goDisplay = document.createElement('div');
+            goDisplay.classList.add("g2_" + go);
+            e.target.append(goDisplay);
+            go = go === "circle" ? "cross" : "circle";
+            infoDisplay.textContent = "it is now " + go + "'s go.";
+            e.target.removeEventListener("click", markit);
+            checkScore();
+        }
+
+        function restartGame() {
+            if (restart === 1) {
+                // infoDisplay.textContent = "Circle goes First";
+
+                // starCells = ["", "", "", "", "", "", "", "", ""];
+                // const allSquares = document.querySelectorAll(".g2_square");
+                // allSquares.forEach(square => {
+                //         square.innerHTML = '';
+                //         square.addEventListener('click', markit);
+                //     });
+                // go = "circle";
+                // createBoard();
+                restart = 0; // Reset the restart variable
+                location.reload();
+            }
+        }
+
+        function checkScore() {
+            const allSquares = document.querySelectorAll(".g2_square");
+            const winningCondition = [
+                [0, 1, 2], [3, 4, 5], [6, 7, 8],
+                [0, 3, 6], [1, 4, 7], [2, 5, 8],
+                [0, 4, 8], [2, 4, 6]
+            ];
+            let circleWins = false;
+            let crossWins = false;
+
+            for (const array of winningCondition) {
+                circleWins = array.every(cell => allSquares[cell].firstChild?.classList.contains('g2_circle'));
+                if (circleWins) {
+                    break;
+                }
+            }
+
+            if (circleWins) {
+                infoDisplay.textContent = "Circle Wins!";
+                allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+                setTimeout(restartGame, 4000);
+                restart = 1;
+                return;
+            }
+
+            for (const array of winningCondition) {
+                crossWins = array.every(cell => allSquares[cell].firstChild?.classList.contains('g2_cross'));
+                if (crossWins) {
+                    break;
+                }
+            }
+
+            if (crossWins) {
+                infoDisplay.textContent = "Cross Wins!";
+                allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+                setTimeout(restartGame, 4000);
+                restart = 1;
+                return;
+            }
+
+            if ([...allSquares].every(square => square.firstChild?.classList?.contains('g2_circle') || square.firstChild?.classList?.contains('g2_cross'))) {
+                infoDisplay.textContent = "It's a Draw!";
+                allSquares.forEach(square => square.replaceWith(square.cloneNode(true)));
+                restart = 1;
+                setTimeout(restartGame, 4000);
+                return;
+            }
+        }
+
+    </script>
+    <script defer src="script.js"></script>
+</body>
+
+</html>

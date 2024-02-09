@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3e5ef901d3.js" crossorigin="anonymous"></script>
+    <style>
+        body {
+            background-image: url("./images/bg8.jpg");
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- header section  -->
+
+    <header class="wrapper">
+        <section class="game-section">
+            <div class="game navbox">
+                <div class="logo-container">
+                    <img src="./images/logo.png" alt="logo" style="  height: 2rem; width: fit-content; margin: auto;">
+                </div>
+                <hr>
+                <div class="controls">
+                    <a href="index.html"><i class="fa-solid fa-house fa-xl" id="home"></i></a>
+                    <i class="fa-solid fa-volume-high fa-xl" id="play_button"></i>
+                    <audio src="images/audio.mp3" id="audio"></audio>
+                </div>
+            </div>
+            <a class="game game1" id="RPS " href="./rps.html">
+            </a>
+            <a class="game game2" id="TTT" href="./ttt.html"></a>
+        </section>
+        <section class="game-board">
+            <div class="board">
+                <section class="memory-game">
+                    <div class="memory-card" data-framework="jigglypuff">
+                        <img class="front-face" src="./images/memory/jigglypuff.png" alt="jigglypuff" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="charijad">
+                        <img class="front-face" src="./images/memory/charijad.png" alt="charijad" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    
+                    <div class="memory-card" data-framework="jigglypuff">
+                        <img class="front-face" src="./images/memory/jigglypuff.png" alt="jigglypuff" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    
+                    <div class="memory-card" data-framework="pikachu">
+                        <img class="front-face" src="./images/memory/pikachu.png" alt="pikachu" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    
+                    <div class="memory-card" data-framework="walbasor">
+                        <img class="front-face" src="./images/memory/walbasor.png" alt="walbasor" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="charijad">
+                        <img class="front-face" src="./images/memory/charijad.png" alt="charijad" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="treeko">
+                        <img class="front-face" src="./images/memory/treeko.png" alt="treeko" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="pikachu">
+                        <img class="front-face" src="./images/memory/pikachu.png" alt="pikachu" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="squartle">
+                        <img class="front-face" src="./images/memory/squartle.png" alt="squartle" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    
+                    <div class="memory-card" data-framework="walbasor">
+                        <img class="front-face" src="./images/memory/walbasor.png" alt="walbasor" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    
+                    <div class="memory-card" data-framework="treeko">
+                        <img class="front-face" src="./images/memory/treeko.png" alt="treeko" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                    <div class="memory-card" data-framework="squartle">
+                        <img class="front-face" src="./images/memory/squartle.png" alt="squartle" />
+                        <img class="back-face" src="./images/memory/pokiball.png" alt="pokiball" />
+                    </div>
+                </section>
+            </div>
+            <div class="score">
+                <div class="score-title">
+                    <img id="gameImage" src="./images/games/card (1).png" alt="#">
+                    <h3 id="gameName">Memory Game</h3>
+                </div>
+                <div id="g4_gameStatus">
+                    <i id="p1" class="fa-solid fa-user" style="color: #f40b0b;"></i>
+                    <!-- <i id="p2" class="fa-solid fa-user" style="color: #130bf4;">Player2</i> -->
+                    <!-- <i id="points" class="fa-solid fa-trophy">45</i> -->
+                </div>
+            </div>
+        </section>
+        <section class="game-section">
+            <div class="game game7" id="MTH">Comming Soon!</div>
+            <a class="game game3" id="MCG" href="./mcg.html"></a>
+            <a class="game game4" id="SDK" href="./sdk.html"></a>
+        </section>
+    </header>
+
+    <section class="instructions">
+        <aside class="instruction4" style="display: contents;">
+            <div class="about" id="memory-game-info">
+                <img style="height: 8rem; width: 8rem;" src="./images/games/mem-2.jpg" alt="logo">
+                <div class="reviews" id="rating">
+                    ⭐⭐⭐⭐⭐
+                </div>
+                <p id="about">Memory Game is a classic card-matching game that tests your memory and concentration. The
+                    objective is simple: flip over pairs of cards to find matching pairs. It's a fun and challenging
+                    game that can be enjoyed by players of all ages.
+                </p>
+                <br>
+                <p>Memory Game can be played with a standard deck of cards or with themed cards featuring various images
+                    or symbols. The game is typically played with a set of cards placed face down, and players take
+                    turns flipping two cards over to see if they match. Here's how to play:
+                </p>
+            </div>
+            <br>
+            <div>
+                <h2 id="how-to-play">How To Play Memory Game?</h2>
+                <p>To play Memory Game, follow these steps:</p>
+                <br>
+                <h3>Setup:</h3>
+                <p>1. Shuffle the deck of cards or arrange the themed cards in a grid, face down.
+                </p>
+                <p>2. Make sure the cards are placed in an organized grid pattern so that they are easy to flip over.
+                </p>
+                <br>
+                <h3>Gameplay:</h3>
+                <p>1. The first player (or the player with the youngest age) goes first.
+                </p>
+                <p>2. On a player's turn, they flip over two cards, exposing their faces.
+                </p>
+                <p>3. If the two cards match (have the same image or symbol), the player keeps the pair and gets another
+                    turn.
+                </p>
+                <p>4. If the two cards do not match, the player flips them face down again, and it becomes the next
+                    player's turn.
+                </p>
+                <br>
+                <h3>Objective:</h3>
+                <p>The goal is to find and collect as many matching pairs of cards as possible.
+                </p>
+                <br>
+                <h3>Winning Conditions:</h3>
+                <p>The game ends when all pairs of cards have been matched. The player with the most pairs wins.
+                </p>
+                <br>
+                <h3>Tips for Success:</h3>
+                <p>- Pay close attention to the cards you flip over and try to remember their positions.
+                </p>
+                <p>- Use your memory to recall the locations of matching cards to increase your chances of making
+                    successful pairs.
+                </p>
+                <p>- Memory Game is not just about luck; it's also about concentration and strategy.
+                </p>
+            </div>
+        </aside>
+    </section>
+
+    <!-- footer section  -->
+
+    <footer>
+        <div class="content">
+            <img src="images/logo.png" alt="">
+            <h5>Let the world play</h5>
+            <ul>
+                <li><a href="">About</a></li>
+                <li><a href="">Devlopers</a></li>
+                <li><a href="">Game</a></li>
+                <li><a href="">Privacy Statement</a></li>
+                <li><a href="">Term of Use</a></li>
+                <li><a href="">FAQ</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+            <div>
+                <img src="images/lang.png" alt="#" style="height: 2rem; width:2rem">
+            </div>
+        </div>
+    </footer>
+    <script>
+        const cards = document.querySelectorAll('.memory-card');
+
+        let hasFlippedCard = false;
+        let firstCard, secondCard;
+
+        function flipCard() {
+            this.classList.add('flip');
+
+            if (!hasFlippedCard) {
+                // first click
+                hasFlippedCard = true;
+                firstCard = this;
+            } else {
+                // second click
+                hasFlippedCard = false;
+                secondCard = this;
+
+                if (firstCard.dataset.framework === secondCard.dataset.framework) {
+                    // it's a match!
+                    firstCard.removeEventListener('click', flipCard);
+                    secondCard.removeEventListener('click', flipCard);
+                } else {
+                    // not a match
+                    setTimeout(() => {
+                        firstCard.classList.remove('flip');
+                        secondCard.classList.remove('flip');
+                    }, 1500);
+                }
+            }
+        }
+
+        cards.forEach(card => card.addEventListener('click', flipCard));
+    </script>
+    <script defer src="script.js"></script>
+
+</body>
+
+</html>
